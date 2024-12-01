@@ -1,31 +1,32 @@
----
-language:
-- en
-- multilingual
-license: mit
-tags:
+# Dataset Metadata
+
+## Languages
+- English (primary)
+- Multilingual support
+
+## License
+MIT
+
+## Tags
 - bluesky
 - social-media
 - posts
-dataset_info:
-  features:
-    - name: text
-      dtype: string
-    - name: created_at
-      dtype: string
-    - name: author
-      dtype: string
-    - name: uri
-      dtype: string
-    - name: has_images
-      dtype: bool
-    - name: reply_to
-      dtype: string
-  config_name: default
-  splits:
-    - name: train
-      num_examples: 7877660
----
+
+## Dataset Features
+
+| Feature | Type |
+|---------|------|
+| text | string |
+| created_at | string |
+| author | string |
+| uri | string |
+| has_images | boolean |
+| reply_to | string |
+
+## Dataset Configuration
+- **Config Name**: default
+- **Split**: train
+- **Number of Examples**: 7,877,660
 
 ![Bluesky Posts Dataset Overview](bskyposts.png)
 
@@ -67,6 +68,3 @@ This dataset is intended for research and development purposes. Users should com
 
 ## Acknowledgments
 Data collected from Bluesky Social's public posts. Special thanks to the Bluesky community.
-
-## License
-This dataset is released under the MIT License.
